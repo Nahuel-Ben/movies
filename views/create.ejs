@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div><h1>Agrega Película:</h1>
+        <form method="POST" action="/movies/create" enctype="multipart/form-data">
+            <p><label>Título:</label><input type="text" name="title" placeholder="Título de la película"></p>
+            <p><label>Fecha de estreno:</label><input type="date"  name="release_date"></p>
+            <p><label>Duración:</label><input type="text" name="length" placeholder="Duración de la película"></p>
+            <p><label>Rating:</label><input type="text" name="rating" placeholder="Rating"></p>
+            <p><label>Género:</label><input type="text" name="genre_id" placeholder="Género de la película"></p>
+            <p><label>Premios:</label><input type="text" name="awards" placeholder="Premios de la película"></p>
+            <div>
+                <button type="submit">Agregar</button>
+                <button type="reset">Cancelar</button>
+            </div>
+        </form></div>
+</body>
+</html>

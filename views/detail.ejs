@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de la película</title>
+</head>
+<body>
+    <h1><%= pelicula.title %></h1>
+    <h4>Fecha de salida: <%= pelicula.release_date %></h4>
+    <h2>Duración: <%= pelicula.length %> minutos</h2>
+    <h2>Rating: <%= pelicula.rating %> </h2>
+    <h2>Cantidad de premios: <%= pelicula.awards %></h2>
+
+    <form action="/detail/<%= pelicula.id %>?_method=DELETE" method="POST" enctype="multipart/form-data">
+        <button>Borrar</button>
+    </form>
+    <form action="/movies/edit/<%= pelicula.id %>" enctype="multipart/form-data">
+        <button>Editar</button>
+    </form>
+    
+</body>
+</html>
